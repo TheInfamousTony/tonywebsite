@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="shortcut icon" type="image/png" href="C:\Users\Sony\Documents\Website\TonyLogo.PNG"/>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+<style>
+*
+{
+	box-sizing: border-box;
+}
+body 
+{
+	margin: 0;
+	font-family: 'Poppins';font-size: 17px;
+	background-color: #0160B4;
+}
+h1
+{
+	font-family: 'Poppins';font-size: 50px;
+	text-align: center;
+}
+img
+{
+	display: block;
+	margin-left: 12;
+	margin-right: auto;
+	width: auto;
+}
+button
+{
+	border: none;
+	background-color: #52b2BF;
+	padding: 15px 32px;
+	text-align: center
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	transition-duration: 0.5s;
+}
+button:hover
+{
+	border: none;
+	background-color: #0492c2;
+	text-align: center
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+.header
+{
+	padding: 30px;
+	text-align: center;
+	background: #1F456E;
+	color: white;
+	font-size: 30px;
+}
+.navbar
+{
+	overflow: hidden;
+	background-color: #281E5D;
+}
+.navbar a
+{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+.navbar a.right
+{
+	float: right;
+}
+.navbar a:hover
+{
+	background-color: #241571;
+	color: white;
+}
+.main
+{
+	flex: 70%;
+	background-color: #82EEFD;
+	padding: 20px;
+}
+
+.fakeimg
+{
+	background-color: #6492C2;
+	width: 100%;
+	padding: 20px;
+}
+.footer
+{
+	padding: 10px;
+	text-align: left;
+	background: #1F456E;
+}
+.sticky
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content
+{
+	padding-top: 40px;
+}
+@media screen and (max-width: 700px)
+{
+	.row
+	{
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 400px)
+{
+	.navbar a
+	{
+		float: none;
+		width: 100%;
+	}
+}
+::-webkit-scrollbar
+{
+	width: 15px;
+}
+::-webkit-scrollbar-track
+{
+	background-color: #82EEFD;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #63C5DA;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: #52B2BF;
+	border-radius: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+	<h1>About Me</h1>
+</div>
+<div class="navbar" id="mynavbar">
+	<a href="https://www.youtube.com/channel/h9ZC2N6wMfUeOtz8aa4Dhg">Youtube Channel?</a>
+	<a href="https://discord.gg/peWhcDpcn5">Discord Server</a>
+	<a href="What's Coming Soon.html" class="right">What's coming soon</a>
+	<a href="Main Webpage.html" class="right">Main Webpage</a>
+</div>
+<div class="content">
+<div class="row">
+
+	<div class="main">
+		<h2>Description of me</h2>
+		<h5>My Logo:<h5>
+		<img src="C:\Users\Sony\Documents\Website\TonyLogo.PNG" alt="My Logo" class="center">
+		<p>I'm 13 years old boy, and I'm online schooling(my old school is actually Vinschool). 
+		I was born in Vietnamese, in Ho Chi Minh City. I live with my family, which has my Mom, 
+		my Dad, and my sister. My dream is to be a programmer and a game developer. I am curren
+		tly learning Unity and C# game developing. My usernames will usually be "TheInfamousTony
+		" or "probably_not_bro". If you want to email me then my gmail is nhakhoahoctony@gmail.
+		com. If you want to DM me on Discord, this is my username and ID ✨TheInfamousTony✨        ඞ#2131.</p>
+	</div>
+	
+</div>
+
+<div class="footer">
+	<h2>Thanks to the bois for joining our team: </h2>
+	<ol>
+	<li>Nooberto(aka Tom)</li>
+	<li>Monke Phrog</li>
+	<li>Chicken Nugget</li>
+	<li>GArtem</li>
+	<li>Benny the Jawnney</li>
+	</ol>
+	<a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button type = "button" onclick = "alert('lol get rickrolled')">don't click here</button></a>
+</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("mynavbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+</html>
